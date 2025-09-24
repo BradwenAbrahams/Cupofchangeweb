@@ -27,3 +27,11 @@ a:visited {
 a:active {
   color: rgb(0, 255, 21);
 }
+
+hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient( to right transparent, #4B2E2A, transparent );
+    width: 80%;
+    margin: 2rem auto;
+}

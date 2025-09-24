@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(109, 250, 109);
+  
+}
+h1 {
+    font-family: sans-serif;
+    color: rgba(51, 1, 1, 0.793);
+
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: ;
+}
+p {
+    color: brown;
+    size: 3;
+}

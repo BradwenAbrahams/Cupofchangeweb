@@ -1,31 +1,45 @@
 body {
-  background-color: rgb(144, 255, 144);
-  
+  background-color: #3b2f2f; /* deep coffee brown */
+  color: #2e7d32; /* green text */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: #4caf50; 
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0.5em;
 }
 h1 {
-    font-family: sans-serif;
-    color: rgba(51, 1, 1, 0.848);
+  font-size: 2.5rem;
+}
 
+h2 {
+  font-size: 2rem;
 }
-h2 h3 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4;
-}
+
+
+
 p {
-    color: rgb(0, 0, 0);
+    color: rgb(24, 22, 22);
     size: 3;
 }
 a {
-    color: rgb(135, 67, 7);
-    font-weight: b;
+  color: #81c784; 
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:visited {
-  color: rgb(223, 0, 0);
+  color: rgb(35, 161, 115);
+}
+
+a:hover {
+  color: #c8e6c9; 
 }
 
 a:active {
-  color: rgb(0, 255, 21);
+  color: rgb(84, 197, 93);
 }
 
 hr {
@@ -34,4 +48,95 @@ hr {
     background: linear-gradient( to right transparent, #4B2E2A, transparent );
     width: 80%;
     margin: 2rem auto;
+}
+
+button, .btn {
+  background-color: #271305;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #66bb6a;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 60%;
+  margin: 2rem auto; 
+  background: linear-gradient(to right, #3b2f2f, #4caf50, #3b2f2f);
+  border-radius: 3px; 
+}
+
+/* Section Titles */
+#shop h2, #non-coffee h2 {
+  font-size: 2.5rem;
+  color: #4caf50;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Grid layout */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Product Card */
+.product-card {
+  background: #3b2f2f;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Product Info */
+.product-card h3 {
+  font-size: 1.5rem;
+  color: #81c784;
+  margin-bottom: 0.5rem;
+}
+.price {
+  font-weight: bold;
+  color: #4caf50;
+}
+.donation {
+  color: #a5d6a7;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn {
+  background: #4caf50;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }

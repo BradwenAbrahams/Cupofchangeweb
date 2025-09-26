@@ -140,3 +140,24 @@ hr {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
+/* Timeline / Story Sections */
+.section {
+  background: rgba(0, 0, 0, 0.2); 
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto;
+  border-left: 4px solid #4caf50; 
+  border-radius: 5px;
+  max-width: 850px;
+  line-height: 1.6;
+}
+
+.section h3 {
+  color: #ffcc80;
+  margin-bottom: 0.3rem;
+}
+
+.section p {
+  color: #ddd; 
+  font-size: 1rem;
+}

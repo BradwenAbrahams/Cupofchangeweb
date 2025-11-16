@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>
-Cup of Change| Home
-</title>
-<link rel="stylesheet" href="Css/Mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cup of Change | Home</title>
+    <link rel="stylesheet" href="Css/Mystyle.css">
+    <script src="js/javame.js" defer></script>
 </head>
 <body>
 
+    
 <!--Navigation Menu-->
 <table border="1" cellpadding="10" cellspacing="0" width="100%">
 <tr>
@@ -18,39 +20,51 @@ Cup of Change| Home
 <td><a href="contactus.html">Contact us</a></td>
 </tr>
 </table>
-
-<!--Website/Company title-->
-<h1><strong>Cup of Change</h1></strong>
+<button id="darkModeBtn">Toggle Dark Mode</button>
 
 
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <!-- Time-based Greeting -->
+        <h2 id="greeting" class="greeting"></h2>
 
+        <h1>Cup of Change</h1>
+        <h2><i>Your Morning Coffee. Their Brighter Tomorrow.</i></h2>
 
-<h2><i> Your Morning Coffee. Their Brighter Tomorrow.</i></h2>
-<img src="Img/Coffhome.jpg" alt="Coffee Mugs" width="50%" height="50%">
+        <!-- Coffee Cup with Steam Animation -->
+        <div class="coffee-cup">
+            <div class="steam steam1"></div>
+            <div class="steam steam2"></div>
+            <div class="steam steam3"></div>
+            <img src="Img/Coffhome.jpg" alt="Coffee Cup" class="coffee-img">
+        </div>
+    </header>
 
-<p><i> We believe in brewing a better future, one cup at a time.<br>
-        Every purchase not only delivers rich, ethically sourced coffee,<br>
-        but also supports rural communities through seed donations, 
-        farming jobs, and sustainable livelihoods.
-</p></i>
+    <!-- About / Mission Section -->
+    <main>
+        <section class="mission">
+            <p><i>
+                We believe in brewing a better future, one cup at a time.<br>
+                Every purchase not only delivers rich, ethically sourced coffee,<br>
+                but also supports rural communities through seed donations, 
+                farming jobs, and sustainable livelihoods.
+            </i></p>
+            <a href="Shop.html" class="cta">Buy a Coffee, Better a Life</a>
+        </section>
 
+        <!-- Achievements Section -->
+        <section class="achievements">
+            <h2>Our Achievements</h2>
+            <img src="Img/Cofeee.jpg" alt="Coffee Beans" class="achievement-img" width="40%">
 
-<h1><strong>
-<a href="Shop.html">Buy a coffee better a life
-</a></strong></h1>
-
-<h1>Achievements</h1>
-<img src="Img/Cofeee.jpg" alt="coffee" width="30%" height="30%">
-
-<p>
-<ul>
-   <li>42 sustainable jobs created for coffee farmers and harvesters.</li>
-   <li>Fair wages that are 30% above the regional average.</li>
-   <li>Donated over R85,000 to local charities and feeding schemes.</li>
-   <li>Provided 3,500+ warm meals to families living in poverty.</li>
-   </p>
-</ul>
-
+            <ul>
+                <li>☕ 42 sustainable jobs created for coffee farmers and harvesters.</li>
+                <li>💵 Fair wages that are 30% above the regional average.</li>
+                <li>🌱 Donated over R85,000 to local charities and feeding schemes.</li>
+                <li>🍽 Provided 3,500+ warm meals to families living in poverty.</li>
+            </ul>
+        </section>
+    </main>
 
 </body>
 </html>

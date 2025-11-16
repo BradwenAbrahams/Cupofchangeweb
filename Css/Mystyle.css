@@ -21,7 +21,7 @@ h2 {
 
 
 p {
-    color: rgb(24, 22, 22);
+    color: rgb(9, 187, 155);
     size: 3;
 }
 a {
@@ -177,4 +177,82 @@ li {
   font-weight: bold;
   text-align: center; 
   color: #81c784;
+}
+
+.greeting {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 40px;
+    transition: color 0.5s ease, text-shadow 0.5s ease;
+}
+
+
+.morning {
+    color: #7b4b2a;
+    text-shadow: 2px 2px #f7e7c6;
+}
+
+
+.afternoon {
+    color: #4b2e19;
+    text-shadow: 2px 2px #c89b62;
+}
+
+
+.evening {
+    color: #2b1a12;
+    text-shadow: 2px 2px #e3b889;
+}
+
+.coffee-cup {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.coffee-img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Steam effect */
+.steam {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    width: 10px;
+    height: 30px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    animation: rise 3s infinite ease-in-out;
+    opacity: 0;
+}
+
+/* Slight variations */
+.steam1 { animation-delay: 0s; transform: translateX(-20px); }
+.steam2 { animation-delay: 0.5s; transform: translateX(0px); }
+.steam3 { animation-delay: 1s; transform: translateX(20px); }
+
+@keyframes rise {
+    0% { transform: translateY(0) scaleX(1); opacity: 0; }
+    30% { opacity: 0.5; }
+    60% { transform: translateY(-50px) scaleX(1.2); opacity: 0.3; }
+    100% { transform: translateY(-100px) scaleX(1.5); opacity: 0; }
+}
+
+/* Default light-ish coffee theme */
+body {
+  background-color: #3b2f2f; /* deep coffee brown */
+  color: #2e7d32; /* green text */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode theme */
+body.dark-mode {
+  background-color: #1c0f0f; /* darker, almost black coffee */
+  color: #a5d6a7; /* lighter green for contrast */
 }

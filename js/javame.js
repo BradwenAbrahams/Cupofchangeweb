@@ -1,5 +1,5 @@
-function addToCart() {
-  alert("Added to cart! ☕");
+function addToCart(productName) {
+    alert(productName + " has been added to your cart!");
 }
 
 function greetUser() {

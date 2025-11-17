@@ -31,3 +31,26 @@ const darkModeBtn = document.getElementById('darkModeBtn');
 darkModeBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 });
+
+window.addEventListener("scroll", function() {
+  const nav = document.querySelector("table");
+  if (window.scrollY > 50) {
+    nav.style.backgroundColor = "#2c1d1d"; //
+  } else {
+    nav.style.backgroundColor = "#3b2f2f"; // original
+  }
+});
+
+const links = document.querySelectorAll("table a");
+links.forEach(link => {
+  if (link.href === window.location.href) {
+    link.style.fontWeight = "bold";
+    link.style.color = "#2e7d32";  // green highlight
+    link.style.textDecoration = "underline";
+  }
+});
+
+window.onload = () => {
+  document.body.classList.add("loaded");
+};
+

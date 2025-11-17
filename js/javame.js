@@ -1,6 +1,9 @@
+//Add to cart
 function addToCart(productName) {
     alert(productName + " has been added to your cart!");
 }
+
+//Greeting messages
 
 function greetUser() {
   const hour = new Date().getHours();
@@ -50,7 +53,32 @@ links.forEach(link => {
   }
 });
 
+//Light box
 window.onload = () => {
   document.body.classList.add("loaded");
 };
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.createElement("div");
+  lightbox.classList.add("lightbox");
+  document.body.appendChild(lightbox);
+
+  const imgs = document.querySelectorAll(".lightbox-img");
+
+  imgs.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.classList.add("active");
+      const bigImg = document.createElement("img");
+      bigImg.src = img.src;
+      while (lightbox.firstChild) {
+        lightbox.removeChild(lightbox.firstChild);
+      }
+      lightbox.appendChild(bigImg);
+    });
+  });
+
+  lightbox.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+});

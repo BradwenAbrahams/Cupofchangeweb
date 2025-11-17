@@ -265,7 +265,7 @@ nav, table {
   z-index: 999;
 }
 body {
-  padding-top: 60px; /* prevents content from hiding under navbar */
+  padding-top: 60px; /
 }
 
 table a {
@@ -274,7 +274,7 @@ table a {
 
 table a:hover {
   transform: scale(1.1);
-  color: #4caf50; /* brighter green */
+  color: #4caf50;
 }
 
 body {
@@ -283,4 +283,47 @@ body {
 }
 body.loaded {
   opacity: 1;
+}
+
+/* The Lightbox Background */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+/* When its active */
+.lightbox.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Lightbox Image */
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
